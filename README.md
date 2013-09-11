@@ -14,7 +14,7 @@ This is constructed as
 
 In my case, during development this was (eg)
 
-C:\Documents and Settings\TheGreyGhost\My Documents\IDEAprojects\ForgeCurrent\out\production\TestItemRendering\assets\testitemrendering\textures\items/error.png
+C:\Documents and Settings\TheGreyGhost\My Documents\IDEAprojects\ForgeCurrent\out\production\testitemrendering\assets\testitemrendering\textures\items/error.png
 
 Some more details here:
 http://www.minecraftforge.net/forum/index.php?topic=11963.0

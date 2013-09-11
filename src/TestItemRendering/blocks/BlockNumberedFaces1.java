@@ -1,4 +1,4 @@
-package TestItemRendering.blocks;
+package testitemrendering.blocks;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
@@ -32,7 +32,7 @@ public class BlockNumberedFaces1 extends Block {
     faceIcons = new Icon[6];
     int i;
     for (i=0; i < faceIcons.length; ++i) {
-      faceIcons[i] = iconRegister.registerIcon("TestItemRendering:NumberedFace"+i);
+      faceIcons[i] = iconRegister.registerIcon("testitemrendering:NumberedFace"+i);
     }
   }
 

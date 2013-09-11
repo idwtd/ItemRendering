@@ -1,4 +1,4 @@
-package TestItemRendering.items;
+package testitemrendering.items;
 
 import net.minecraft.client.renderer.texture.IconRegister;
 import net.minecraft.creativetab.CreativeTabs;
@@ -24,7 +24,7 @@ public class ItemNumberedFaces3 extends Item {
     faceIcons = new Icon[6];
     int i;
     for (i=0; i < faceIcons.length; ++i) {
-      faceIcons[i] = iconRegister.registerIcon("TestItemRendering:NumberedFace"+i);
+      faceIcons[i] = iconRegister.registerIcon("testitemrendering:NumberedFace"+i);
     }
 
     this.itemIcon = faceIcons[3];   // make the default icon (2D) equal the "3" face

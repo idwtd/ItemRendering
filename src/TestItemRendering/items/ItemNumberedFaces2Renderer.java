@@ -1,4 +1,4 @@
-package TestItemRendering.items;
+package testitemrendering.items;
 
 import net.minecraft.client.renderer.Tessellator;
 import net.minecraft.client.renderer.entity.RenderItem;
@@ -10,7 +10,7 @@ import org.lwjgl.opengl.GL11;
 public class ItemNumberedFaces2Renderer implements IItemRenderer {
 
   static final boolean testflagColour = true;          // if true - render cube with each face a different colour
-  static final boolean testflagIsFull3D = true;       // if true - rotate the icon in EQUIPPED 3rd person view - eg sword.  If false - don't rotate, eg pumpkin pie
+  static final boolean testflagIsFull3D = false;       // if true - rotate the icon in EQUIPPED 3rd person view - eg sword.  If false - don't rotate, eg pumpkin pie
   static boolean wrongRendererMsgWritten = false;      // if renderer is called with the wrong item, it prints an error msg once only, by setting this flag to stop subsequent prints
 
   @Override

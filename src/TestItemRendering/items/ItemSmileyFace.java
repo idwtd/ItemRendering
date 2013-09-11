@@ -1,4 +1,4 @@
-package TestItemRendering.items;
+package testitemrendering.items;
 
 import net.minecraft.client.renderer.texture.IconRegister;
 import net.minecraft.creativetab.CreativeTabs;
@@ -15,7 +15,7 @@ public class ItemSmileyFace extends Item {
   @Override
   public void registerIcons(IconRegister iconRegister)
   {
-    itemIcon = iconRegister.registerIcon("TestItemRendering:SmileyFace");
+    itemIcon = iconRegister.registerIcon("testitemrendering:SmileyFace");
   }
 
 }

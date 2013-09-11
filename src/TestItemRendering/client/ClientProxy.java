@@ -1,6 +1,6 @@
-package TestItemRendering.client;
+package testitemrendering.client;
 
-import TestItemRendering.CommonProxy;
+import testitemrendering.CommonProxy;
 
 public class ClientProxy extends CommonProxy {
 

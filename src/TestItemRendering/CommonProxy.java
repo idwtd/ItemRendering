@@ -1,4 +1,4 @@
-package TestItemRendering;
+package testitemrendering;
 
 /**
  * Created with IntelliJ IDEA.

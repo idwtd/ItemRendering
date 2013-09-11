@@ -1,4 +1,4 @@
-package TestItemRendering.items;
+package testitemrendering.items;
 
 import net.minecraft.client.renderer.texture.IconRegister;
 import net.minecraft.creativetab.CreativeTabs;
@@ -18,7 +18,7 @@ public class ItemLampshade extends Item {
   @Override
   public void registerIcons(IconRegister iconRegister)
   {
-    itemIcon = iconRegister.registerIcon("TestItemRendering:Error");
+    itemIcon = iconRegister.registerIcon("testitemrendering:Error");
   }
 
 //  Lampshade uses the Block texture sheet for rendering instead of the Item texture sheet

@@ -1,4 +1,4 @@
-package TestItemRendering.blocks;
+package testitemrendering.blocks;
 
 import net.minecraft.client.renderer.Tessellator;
 import net.minecraft.item.ItemStack;

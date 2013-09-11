@@ -1,10 +1,9 @@
-package TestItemRendering.blocks;
+package testitemrendering.blocks;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IconRegister;
 import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.util.Icon;
 
 /*
 This class is used to demonstrate ISimpleBlockRenderingHandler for drawing a 3D block, both as a block in the world and as an item.

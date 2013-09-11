@@ -1,7 +1,7 @@
-package TestItemRendering;
+package testitemrendering;
 
-import TestItemRendering.blocks.*;
-import TestItemRendering.items.*;
+import testitemrendering.blocks.*;
+import testitemrendering.items.*;
 import cpw.mods.fml.client.registry.RenderingRegistry;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
@@ -56,7 +56,7 @@ public class TestItemRenderingMod {
   private final static ItemNumberedFaces3Renderer itemNumberedFaces3Renderer = new ItemNumberedFaces3Renderer();
 
   // Says where the client and server 'proxy' code is loaded.
-  @SidedProxy(clientSide="TestItemRendering.client.ClientProxy", serverSide="TestItemRendering.CommonProxy")
+  @SidedProxy(clientSide="testitemrendering.client.ClientProxy", serverSide="testitemrendering.CommonProxy")
   public static CommonProxy proxy;
 
   @EventHandler

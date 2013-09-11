@@ -1,6 +1,6 @@
-package TestItemRendering.blocks;
+package testitemrendering.blocks;
 
-import TestItemRendering.TestItemRenderingMod;
+import testitemrendering.TestItemRenderingMod;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.util.Icon;
