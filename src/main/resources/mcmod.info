@@ -1,0 +1,16 @@
+[
+{
+  "modid": "testitemrendering",
+  "name": "Test Item Rendering Mod",
+  "description": "Test mod for Item Rendering",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "https://github.com/idwtd/ItemRendering",
+  "updateUrl": "",
+  "authorList": ["idwtd"],
+  "credits": "TheGreyGhost, for making this mod",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

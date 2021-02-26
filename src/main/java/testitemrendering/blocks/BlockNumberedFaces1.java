@@ -1,10 +1,11 @@
 package testitemrendering.blocks;
 
+import testitemrendering.TestItemRenderingMod;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
-import net.minecraft.client.renderer.texture.IconRegister;
+import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.util.Icon;
+import net.minecraft.util.IIcon;
 
 /*
   This class is used to demonstrate IItemRenderer for an ItemBlock.
@@ -18,26 +19,26 @@ import net.minecraft.util.Icon;
 
 public class BlockNumberedFaces1 extends Block {
 
-  private Icon[] faceIcons;    // holds the icons for each face 0 - 5.
+  private IIcon[] faceIcons;    // holds the icons for each face 0 - 5.
 
-  public BlockNumberedFaces1(int id, Material material) {
-    super(id, material);
+  public BlockNumberedFaces1(Material material) {
+    super(material);
     this.setCreativeTab(CreativeTabs.tabBlock);
-    this.setUnlocalizedName("BlockNumberedFaces1");
+    this.setUnlocalizedName("numberedFaces1");
   }
 
   // A numbered icon for each face
   @Override
-  public void registerIcons(IconRegister iconRegister) {
-    faceIcons = new Icon[6];
+  public void registerIcons(IIconRegister iconRegister) {
+    faceIcons = new IIcon[6];
     int i;
     for (i=0; i < faceIcons.length; ++i) {
-      faceIcons[i] = iconRegister.registerIcon("testitemrendering:NumberedFace"+i);
+      faceIcons[i] = iconRegister.registerIcon(TestItemRenderingMod.MODID+":NumberedFace"+i);
     }
   }
 
   @Override
-  public Icon getIcon(int side, int metadata) {
+  public IIcon getIcon(int side, int metadata) {
      if (side < 0 || side > faceIcons.length) side = 0;
      return faceIcons[side];
   }

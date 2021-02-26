@@ -5,7 +5,8 @@ import cpw.mods.fml.client.registry.RenderingRegistry;
 import net.minecraft.block.Block;
 import net.minecraft.client.renderer.RenderBlocks;
 import net.minecraft.client.renderer.Tessellator;
-import net.minecraft.util.Icon;
+import net.minecraft.init.Blocks;
+import net.minecraft.util.IIcon;
 import net.minecraft.world.IBlockAccess;
 import org.lwjgl.opengl.GL11;
 
@@ -55,7 +56,7 @@ public class BlockPyramidRenderer implements ISimpleBlockRenderingHandler {
     return true;
   }
   @Override
-  public boolean shouldRender3DInInventory() {
+  public boolean shouldRender3DInInventory(int modelID) {
     return true;
   }
   @Override
@@ -79,7 +80,7 @@ private void renderPyramid(Tessellator tessellator, double x, double y, double z
     final float FACE_XZ_NORMAL = 0.8944F;
     final float FACE_Y_NORMAL  = 0.4472F;
 
-    Icon icon1 = Block.blockLapis.getIcon(0, 0);
+    IIcon icon1 = Blocks.lapis_block.getIcon(0, 0);
     double minU1 = (double)icon1.getMinU();
     double minV1 = (double)icon1.getMinV();
     double maxU1 = (double)icon1.getMaxU();

@@ -1,24 +1,24 @@
 package testitemrendering.items;
 
-import net.minecraft.client.renderer.texture.IconRegister;
+import testitemrendering.TestItemRenderingMod;
+import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 
 // The Lampshade demonstrates how an Item can be rendered in 3D using a custom renderer implementing IItemRenderer
 
 public class ItemLampshade extends Item {
-  public ItemLampshade(int id) {
-    super(id);
+  public ItemLampshade() {
     setMaxStackSize(64);
     setCreativeTab(CreativeTabs.tabMisc);
-    setUnlocalizedName("LampShade");
+    setUnlocalizedName("lampShade");
   }
 
 // this icon is never used because the custom ItemLampshadeRenderer is invoked instead
   @Override
-  public void registerIcons(IconRegister iconRegister)
+  public void registerIcons(IIconRegister iconRegister)
   {
-    itemIcon = iconRegister.registerIcon("testitemrendering:Error");
+    itemIcon = iconRegister.registerIcon(TestItemRenderingMod.MODID+":Error");
   }
 
 //  Lampshade uses the Block texture sheet for rendering instead of the Item texture sheet

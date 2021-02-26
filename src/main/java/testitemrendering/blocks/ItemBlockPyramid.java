@@ -1,20 +1,17 @@
 package testitemrendering.blocks;
 
-import testitemrendering.TestItemRenderingMod;
-import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.block.Block;
 import net.minecraft.item.ItemBlock;
-import net.minecraft.util.Icon;
+import net.minecraft.util.IIcon;
 
 /*
 This is the item that corresponds to BlockPyramid.
  */
 public class ItemBlockPyramid extends ItemBlock {
 
-  public ItemBlockPyramid(int id) {
-    super(id);
+  public ItemBlockPyramid(Block block) {
+    super(block);
     this.setMaxStackSize(64);
-    this.setCreativeTab(CreativeTabs.tabBlock);
-    this.setUnlocalizedName("ItemBlockPyramid");
   }
   @Override
   public int getMetadata(int damageValue){
@@ -22,9 +19,9 @@ public class ItemBlockPyramid extends ItemBlock {
   }
 
   @Override
-  public Icon getIconFromDamage(int damage)
+  public IIcon getIconFromDamage(int damage)
   {
-    return TestItemRenderingMod.blockPyramid.getIcon(0, damage);
+    return blockInstance.getIcon(0, damage);
   }
 
 }

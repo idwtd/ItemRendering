@@ -1,9 +1,9 @@
 package testitemrendering.items;
 
-import net.minecraft.block.Block;
 import net.minecraft.client.renderer.Tessellator;
+import net.minecraft.init.Blocks;
 import net.minecraft.item.ItemStack;
-import net.minecraft.util.Icon;
+import net.minecraft.util.IIcon;
 import net.minecraftforge.client.IItemRenderer;
 import org.lwjgl.opengl.GL11;
 
@@ -94,7 +94,7 @@ public class ItemLampshadeRenderer implements IItemRenderer {
 
     // Triangular Prism, draw the outside in wood
     // ItemLampshade.getSpriteNumber() has been overridden to return 0, which lets us use the block texture instead of an item texture
-    Icon icon1 = Block.wood.getIcon(0, 0);
+    IIcon icon1 = Blocks.log.getIcon(0, 0);
     double minU1 = (double)icon1.getMinU();
     double minV1 = (double)icon1.getMinV();
     double maxU1 = (double)icon1.getMaxU();
@@ -123,7 +123,7 @@ public class ItemLampshadeRenderer implements IItemRenderer {
 
     // Triangular Prism, draw the inside in gold
 
-    Icon icon2 = Block.blockGold.getIcon(0, 0);
+    IIcon icon2 = Blocks.gold_block.getIcon(0, 0);
     double minU2 = (double)icon2.getMinU();
     double minV2 = (double)icon2.getMinV();
     double maxU2 = (double)icon2.getMaxU();

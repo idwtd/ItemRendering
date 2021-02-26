@@ -2,7 +2,7 @@ package testitemrendering.items;
 
 import net.minecraft.client.renderer.Tessellator;
 import net.minecraft.item.ItemStack;
-import net.minecraft.util.Icon;
+import net.minecraft.util.IIcon;
 import net.minecraftforge.client.IItemRenderer;
 import org.lwjgl.opengl.GL11;
 
@@ -90,7 +90,7 @@ public class ItemNumberedFaces3Renderer implements IItemRenderer {
     }
 
     // xpos face blue
-    Icon icon = facesItem.getFace(5);
+    IIcon icon = facesItem.getFace(5);
     tessellator.setNormal(1.0F, 0.0F, 0.0F);
     if (testflagColour) tessellator.setColorOpaque(0, 0, 255);
     tessellator.addVertexWithUV(1.0, 0.0, 0.0, (double)icon.getMaxU(), (double)icon.getMaxV());
